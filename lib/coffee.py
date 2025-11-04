@@ -21,6 +21,10 @@ class Coffee:
 
     size = property(get_size, set_size)
 
+    def tip(self):
+        print("This coffee is great, here’s a tip!")
+        self.price += 1
+
 
 if __name__ == "__main__":
     my_coffee = Coffee(
